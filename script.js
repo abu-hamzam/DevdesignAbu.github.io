@@ -1,14 +1,4 @@
-// Smooth scrolling for navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Modal functions
+// Modal functions (for portfolio page)
 function openModal(title, desc, imgSrc) {
     document.getElementById('modal-title').textContent = title;
     document.getElementById('modal-desc').textContent = desc;
@@ -28,14 +18,14 @@ window.onclick = function(event) {
     }
 }
 
-// Basic form validation (dynamic feedback)
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    const name = document.querySelector('input[name="name"]');
-    const email = document.querySelector('input[name="email"]');
-    if (!name.value || !email.value) {
-        e.preventDefault();
-        alert('Please fill in all required fields.');
-    }
-});
-
-// Note: Replace Formspree action with your own (sign up at formspree.io for free, get an ID).
+// Basic form validation (for contact page)
+if (document.getElementById('contact-form')) {
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        const name = document.querySelector('input[name="name"]');
+        const email = document.querySelector('input[name="email"]');
+        if (!name.value || !email.value) {
+            e.preventDefault();
+            alert('Please fill in all required fields.');
+        }
+    });
+}
