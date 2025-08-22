@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbuHamza - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AbuHamza</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="animate__animated animate__fadeIn">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="project animate__animated animate__slideInLeft" onclick="openModal('UI/UX Project', 'Interactive app interface design.', 'https://images.unsplash.com/photo-1558655146-dad7a99e91e5')">
+                <img src="https://images.unsplash.com/photo-1558655146-dad7a99e91e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="UI/UX Project">
+                <p>UI/UX Design</p>
+            </div>
+            <div class="project animate__animated animate__slideInRight" onclick="openModal('Logo Design', 'Brand identity for a startup.', 'https://images.unsplash.com/photo-1580983561371-7f4b727c3f67')">
+                <img src="https://images.unsplash.com/photo-1580983561371-7f4b727c3f67?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Logo Design">
+                <p>Logo Design</p>
+            </div>
+            <div class="project animate__animated animate__slideInLeft" onclick="openModal('Social Media Graphic', 'Engaging post for Instagram.', 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7')">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Social Media">
+                <p>Social Media Designs</p>
+            </div>
+            <!-- Add more projects -->
+        </div>
+    </section>
+
+    <!-- Modal for project details -->
+    <div id="modal" class="modal">
+        <div class="modal-content animate__animated animate__zoomIn">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+            <img id="modal-img" src="" alt="Project Image">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AbuHamza. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
