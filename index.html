@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abu Hamza - Graphic Designer Portfolio</title>
+    <title>YourName - Graphic Designer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">AbuHamza</div>
+            <div class="logo">YourName</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -21,51 +23,55 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
+    <section id="home" class="hero animate__animated animate__fadeIn">
+        <div class="hero-content animate__animated animate__fadeInUp">
             <h1>Creative Graphic Designer</h1>
             <p>Specializing in UI/UX, Web Design & Development, Logos, and More</p>
             <a href="#portfolio" class="cta">View My Work</a>
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="animate__animated animate__fadeIn">
         <h2>About Me</h2>
         <p>I'm a passionate graphic designer with expertise in creating visually stunning and functional designs. From scalable icons to premium textbook layouts, I blend creativity with technical precision to deliver high-quality results for print and digital media.</p>
     </section>
 
-    <section id="services">
+    <section id="services" class="animate__animated animate__fadeIn">
         <h2>Services</h2>
         <div class="services-grid">
-            <div class="service">UI/UX Design</div>
-            <div class="service">Web Design & Development</div>
-            <div class="service">Logo Design</div>
-            <div class="service">Social Media Designs</div>
-            <div class="service">Icons & Scalable Designs</div>
-            <div class="service">Photo Editing</div>
-            <div class="service">Digital Art</div>
-            <div class="service">Layout Design for Print/Digital</div>
-            <div class="service">Premium Quality Textbooks</div>
+            <div class="service"><i class="fas fa-paint-brush"></i> UI/UX Design</div>
+            <div class="service"><i class="fas fa-code"></i> Web Design & Development</div>
+            <div class="service"><i class="fas fa-award"></i> Logo Design</div>
+            <div class="service"><i class="fab fa-instagram"></i> Social Media Designs</div>
+            <div class="service"><i class="fas fa-icons"></i> Icons & Scalable Designs</div>
+            <div class="service"><i class="fas fa-edit"></i> Photo Editing</div>
+            <div class="service"><i class="fas fa-palette"></i> Digital Art</div>
+            <div class="service"><i class="fas fa-layer-group"></i> Layout Design for Print/Digital</div>
+            <div class="service"><i class="fas fa-book"></i> Premium Quality Textbooks</div>
         </div>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="animate__animated animate__fadeIn">
         <h2>Portfolio</h2>
         <div class="portfolio-grid">
-            <!-- Add your projects here; replace image URLs with your own -->
-            <div class="project" onclick="openModal('Project 1', 'Description of UI/UX project.', 'https://via.placeholder.com/800x600?text=Project+1')">
-                <img src="https://via.placeholder.com/400x300?text=UI/UX+Project" alt="Project 1">
+            <!-- Updated with more projects and Unsplash placeholders -->
+            <div class="project" onclick="openModal('UI/UX Project', 'Interactive app interface design.', 'https://images.unsplash.com/photo-1558655146-dad7a99e91e5')">
+                <img src="https://images.unsplash.com/photo-1558655146-dad7a99e91e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="UI/UX Project">
                 <p>UI/UX Design</p>
             </div>
-            <div class="project" onclick="openModal('Project 2', 'Logo design for a brand.', 'https://via.placeholder.com/800x600?text=Project+2')">
-                <img src="https://via.placeholder.com/400x300?text=Logo+Design" alt="Project 2">
+            <div class="project" onclick="openModal('Logo Design', 'Brand identity for a startup.', 'https://images.unsplash.com/photo-1580983561371-7f4b727c3f67')">
+                <img src="https://images.unsplash.com/photo-1580983561371-7f4b727c3f67?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Logo Design">
                 <p>Logo Design</p>
             </div>
-            <!-- Add more projects as needed -->
+            <div class="project" onclick="openModal('Social Media Graphic', 'Engaging post for Instagram.', 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7')">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Social Media">
+                <p>Social Media Designs</p>
+            </div>
+            <!-- Add more as needed -->
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="animate__animated animate__fadeIn">
         <h2>Contact Me</h2>
         <form id="contact-form" action="https://formspree.io/f/your-formspree-id" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -73,10 +79,10 @@
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-        <p>Or email me at: abuhamza2705@gmail.com</p>
+        <p>Or email me at: your.email@example.com</p>
     </section>
 
-    <!-- Modal for project details -->
+    <!-- Modal remains the same -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -87,7 +93,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 AbuHamza. All rights reserved.</p>
+        <p>&copy; 2025 YourName. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
