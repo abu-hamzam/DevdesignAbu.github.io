@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourName - Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">YourName</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creative Graphic Designer</h1>
+            <p>Specializing in UI/UX, Web Design & Development, Logos, and More</p>
+            <a href="#portfolio" class="cta">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate graphic designer with expertise in creating visually stunning and functional designs. From scalable icons to premium textbook layouts, I blend creativity with technical precision to deliver high-quality results for print and digital media.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service">UI/UX Design</div>
+            <div class="service">Web Design & Development</div>
+            <div class="service">Logo Design</div>
+            <div class="service">Social Media Designs</div>
+            <div class="service">Icons & Scalable Designs</div>
+            <div class="service">Photo Editing</div>
+            <div class="service">Digital Art</div>
+            <div class="service">Layout Design for Print/Digital</div>
+            <div class="service">Premium Quality Textbooks</div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <!-- Add your projects here; replace image URLs with your own -->
+            <div class="project" onclick="openModal('Project 1', 'Description of UI/UX project.', 'https://via.placeholder.com/800x600?text=Project+1')">
+                <img src="https://via.placeholder.com/400x300?text=UI/UX+Project" alt="Project 1">
+                <p>UI/UX Design</p>
+            </div>
+            <div class="project" onclick="openModal('Project 2', 'Logo design for a brand.', 'https://via.placeholder.com/800x600?text=Project+2')">
+                <img src="https://via.placeholder.com/400x300?text=Logo+Design" alt="Project 2">
+                <p>Logo Design</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/your-formspree-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Or email me at: your.email@example.com</p>
+    </section>
+
+    <!-- Modal for project details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+            <img id="modal-img" src="" alt="Project Image">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 YourName. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
