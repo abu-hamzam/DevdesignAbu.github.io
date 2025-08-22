@@ -54,7 +54,7 @@ section {
 }
 
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); /* Abstract graphic bg */
+    background-image: url('https://images.pexels.com/photos/355853/pexels-photo-355853.jpegixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); /* Abstract graphic bg */
     background-size: cover;
     background-position: center;
     color: white;
