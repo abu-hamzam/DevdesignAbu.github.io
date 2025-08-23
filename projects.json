@@ -1,31 +1,23 @@
 [
-  {
-    "title": "UI/UX Project",
-    "desc": "Interactive app interface design.",
-    "imgSrc": "https://images.unsplash.com/photo-1558655146-dad7a99e91e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "videoSrc": "",
-    "link": ""
-  },
-  {
-    "title": "Logo Design",
-    "desc": "Brand identity for a startup.",
-    "imgSrc": "https://images.unsplash.com/photo-1580983561371-7f4b727c3f67?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "videoSrc": "",
-    "link": "https://example.com/logo-project"
-  },
-  {
-    "title": "Social Media Graphic",
-    "desc": "Engaging post for Instagram.",
-    "imgSrc": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "videoSrc": "https://example.com/video.mp4",
-    "link": ""
-  }
-  // Add more here, e.g.:
-  // {
-  //   "title": "New Project",
-  //   "desc": "Description here.",
-  //   "imgSrc": "your-image-url.jpg",
-  //   "videoSrc": "your-video-url.mp4",
-  //   "link": "your-link-url.com"
-  // }
+    {
+        "title": "UI/UX Project",
+        "desc": "Interactive app interface design.",
+        "imgSrc": "https://images.unsplash.com/photo-1558655146-dad7a99e91e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "videoSrc": "",
+        "link": ""
+    },
+    {
+        "title": "Logo Design",
+        "desc": "Brand identity for a startup.",
+        "imgSrc": "https://images.unsplash.com/photo-1580983561371-7f4b727c3f67?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "videoSrc": "",
+        "link": "https://example.com/logo-project"
+    },
+    {
+        "title": "Social Media Graphic",
+        "desc": "Engaging post for Instagram.",
+        "imgSrc": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "videoSrc": "https://example.com/video.mp4",
+        "link": "https://example.com/logo-project.com"
+    }
 ]
